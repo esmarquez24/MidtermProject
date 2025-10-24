@@ -7,7 +7,7 @@
             "id": "67a69d63-913c-4462-94c8-5642cc87034d",
             "actions": [
                 {
-                    "name": "Look",
+                    "name": "OnLook",
                     "type": "Value",
                     "id": "a8dce349-d01e-40cd-bca7-096c6f5ac38f",
                     "expectedControlType": "Vector2",
@@ -16,7 +16,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Move",
+                    "name": "OnMove",
                     "type": "Value",
                     "id": "982d5628-3db8-4571-aac4-b50d734628de",
                     "expectedControlType": "Vector2",
@@ -25,7 +25,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Crouch",
+                    "name": "OnCrouch",
                     "type": "Button",
                     "id": "e8ab9b59-66cd-440e-b517-0e9d81b1d96d",
                     "expectedControlType": "",
@@ -34,7 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Sprint",
+                    "name": "OnSprint",
                     "type": "Button",
                     "id": "d6bd8e70-6ec8-40b4-aa0b-099230dca761",
                     "expectedControlType": "",
@@ -43,9 +43,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Slide",
+                    "name": "OnSlide",
                     "type": "Button",
                     "id": "627c16f2-88da-4458-b835-8d2708aa86e8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OnJump",
+                    "type": "Button",
+                    "id": "2c667d09-0bda-4edb-8cd1-ecb057e6c871",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -60,7 +69,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "OnMove",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -71,7 +80,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "OnMove",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -82,7 +91,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "OnMove",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -93,7 +102,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "OnMove",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -104,7 +113,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "OnMove",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -115,7 +124,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "OnMove",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -126,7 +135,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Crouch",
+                    "action": "OnCrouch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -137,7 +146,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Sprint",
+                    "action": "OnSprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -148,7 +157,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Slide",
+                    "action": "OnSlide",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7d3424f8-d48a-4a88-90a1-49c3c76338e4",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnJump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
