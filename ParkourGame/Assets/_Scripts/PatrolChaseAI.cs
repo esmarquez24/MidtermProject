@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class PatrolChaseAI : MonoBehaviour
 {
@@ -121,10 +122,8 @@ public class PatrolChaseAI : MonoBehaviour
     //----Collision Handler-----
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log($"[{name}] collided with Player - you got caught");
         if (collision.gameObject.CompareTag(playerTag))
         {
-            Debug.Log($"[{name}] collided with Player - you got caught");
             Destroy(collision.gameObject);
         }
     }
@@ -133,8 +132,8 @@ public class PatrolChaseAI : MonoBehaviour
     {
         if (other.CompareTag(playerTag))
         {
-            Debug.Log($"[{name}] Triggered by Player - destroying self");
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

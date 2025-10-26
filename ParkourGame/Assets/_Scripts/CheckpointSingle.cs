@@ -6,23 +6,18 @@ public class CheckpointSingle : MonoBehaviour
 {
     [Header("Collision")]
     public string playerTag = "Player";
+
+    private GameCheckpoints gameCheckpoints;
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent<Player>(out Player player))
         {
-            Debug.Log("Checkpoint!");
+            gameCheckpoints.PlayerThroughCheckpoint(this);
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void SetGameCheckpoints(GameCheckpoints gameCheckpoints)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        this.gameCheckpoints = gameCheckpoints;
     }
 }

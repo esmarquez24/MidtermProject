@@ -10,7 +10,13 @@ public class GameCheckpoints : MonoBehaviour
 
         foreach (Transform checkpointSingleTransform in checkpointsTransform)
         {
-            Debug.Log("checkpointSingleTransform");
+            CheckpointSingle checkpointSingle = checkpointSingleTransform.GetComponent<CheckpointSingle>();
+            checkpointSingle.SetGameCheckpoints(this);
         }
+    }
+
+    public void PlayerThroughCheckpoint(CheckpointSingle checkpointSingle)
+    {
+        Debug.Log(checkpointSingle.transform.name);
     }
 }
