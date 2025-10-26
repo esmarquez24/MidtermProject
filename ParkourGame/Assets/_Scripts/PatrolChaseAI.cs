@@ -133,7 +133,7 @@ public class PatrolChaseAI : MonoBehaviour
         if (other.CompareTag(playerTag))
         {
             //Destroy(other.gameObject);
-            SceneManager.LoadScene("GameOver");
+            //SceneManager.LoadScene("GameOver");
         }
     }
 }
