@@ -32,6 +32,13 @@ public class GameOver : MonoBehaviour
         Cursor.visible = true;
     }
 
+    public void Restart()
+    {
+        RestoreCursor();
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void OnPlayAgainButton()
     {
         SceneManager.LoadScene("Scene_0");
