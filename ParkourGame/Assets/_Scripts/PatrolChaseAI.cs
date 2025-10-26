@@ -27,6 +27,9 @@ public class PatrolChaseAI : MonoBehaviour
     State state = State.Patrol;
     int index; float wait; float timer;
 
+    public GameObject gameOverUI;
+    public GameManager gameManager;
+
     void Start()
     {
         if (!agent) agent = GetComponent<NavMeshAgent>();
@@ -132,8 +135,7 @@ public class PatrolChaseAI : MonoBehaviour
     {
         if (other.CompareTag(playerTag))
         {
-            //Destroy(other.gameObject);
-            //SceneManager.LoadScene("GameOver");
+            gameManager.GameOver();
         }
     }
 }
